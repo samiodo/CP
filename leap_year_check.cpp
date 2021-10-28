@@ -9,6 +9,11 @@ int leap_year (int n) {
     return 0;
 }
 
+isleap(int n)
+{
+    return n % 4 == 0 && (n % 100 != 0 || n % 400 == 0);
+}
+
 int main () {
     int n;
     cin >> n;
